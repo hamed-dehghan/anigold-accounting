@@ -1,0 +1,175 @@
+.CustomerForm {
+    .CustomerForm_TabBody{
+        padding: .5rem;
+    }
+    .MuiPaper-root.table_Mui{
+      min-height: 8rem;
+    }
+    padding-bottom: 3rem;
+    .react_hook_form{
+      margin: 0!important;
+    }
+    form{
+      margin: .5rem;
+    }
+    form{
+      max-height: 30rem;
+      // overflow-y: auto;
+    }
+}
+@media (min-width: 1024px) {
+  .CustomerForm{
+    width: 1050px;
+  }
+}
+.form_AddIcon{
+    svg{
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    padding-top: .4rem;
+}
+
+
+.UploadImageButton{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: .5rem!important;
+    // border: 1px var(--box-boarder) dashed!important;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    color: var();
+    font-size: rem;
+    margin-bottom: .5rem!important;
+    color: var(--box-boarder);
+    svg{
+       color: var(--box-boarder);
+       opacity: .9;
+       font-size:3rem;
+    }
+    .UploadImageButtonIcon{
+       min-width: 7.5rem;
+       height: 7.5rem;
+       border-radius: .5rem!important;
+       border: 1px var(--box-boarder) dashed!important;
+       display: flex!important;
+       align-items: center;
+       justify-content: center;
+    }
+ }
+
+
+
+ .custom-select__menu{
+  *{
+      color: var(--text-color)!important;
+
+  }
+}
+
+.custom-select__control {
+  >div{
+     height: 100%;
+  }
+  // margin: 0.2rem 0 0.9rem 0;
+  border: 1px solid var(--box-boarder)!important;
+  border: unset!important;
+  border-right: 1px solid var(--box-boarder)!important;
+  width: 100%;
+  height: 2rem;
+  height: 100%;
+  min-height:2rem!important;
+  // border-radius: 0.3rem!important;
+  border-radius: .3rem 0  1rem  0.3rem!important;
+  background: var(--box-background)!important;
+  color: var(--text-color);
+  input{
+     color: var(--text-color)!important;
+  }
+  /* Change border color on focus */
+  &:focus-within {
+    border: 1px solid var(--yellow)!important;
+    // box-shadow: 0 1px 0 0 var(--yellow)!important;
+    box-shadow: unset!important;
+
+  }
+}
+.custom-select__input-container{
+  margin-bottom: -.4rem!important;
+}
+.custom-select__menu {
+  border-radius: 0.5rem;
+  background-color: var(--input-background)!important;
+  // z-index: 999999!important;
+  overflow: auto!important;
+}
+
+.custom-select__option {
+  background-color: var(--input-background)!important;
+  color: var(--text-color);
+  &--is-focused {
+    background-color: var(--box-background-hover)!important;
+  }
+}
+.custom-select__single-value{
+  color: var(--text-color)!important;
+}
+.custom-select__indicator-separator{
+  display: none;
+}
+.custom-select__indicator{
+  padding: 0!important;
+  margin-right: .2rem;
+  cursor: pointer;
+}
+.custom-select__indicator:hover{
+  color: var(--text-color)!important;
+}
+// .custom-select__option{
+//   z-index: 99999999999!important;
+// }
+.custom-select__option:hover{
+  background-color: var(--box-background-hover)!important;
+  cursor: pointer;
+
+}
+
+.custom-select__single-value {
+  color: var(--text-color);
+}
+.custom-select__input-container{
+  margin-top: -.5rem!important;
+}
+
+
+.MuiTabs-root{
+  direction: ltr;
+}
+
+
+.MuiPaper-root.table_Mui{
+  th,td{
+    text-align: right;
+    color: var(--text-color)!important;
+    padding: .5rem;
+  }
+}
+
+
+
+.SubmitLoading{
+  position: absolute;
+  top: '50%';
+  left: '50%';
+  margin-top: '-12px';
+  margin-left: '-12px';
+  width: 25px!important;
+  height: 25px!important;
+}
+
+.buttonSubmit_container{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}

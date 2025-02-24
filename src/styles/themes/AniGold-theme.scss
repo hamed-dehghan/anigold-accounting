@@ -1,0 +1,40 @@
+/* --- .dark Theme --- */
+.AniGold {
+      /* --- General Colors --- */
+      --text-color: #023338;
+      --text-color-active: #fff;
+      --icon-color: #9a732e; /* #a0742c */
+      --placeholder: #a3a3a3;
+      --color-page-title: #454545;
+   
+    /* --- Backgrounds --- */
+    --home-background: #fff;
+    --input-background: #ffffff;
+    --box-background: #ffffff;
+    --box2-background: #f0f0f0;
+    --box-background-hover: #e6e6e6;
+    --dialog-background: #ffffff;
+   
+       /* --- Buttons --- */
+       --homeButton-border: #4da8b8; /* Lighter teal for button borders */
+       --homeButton-background: #033438; /* Blends with main theme */
+       --homeButton-border-selected: #4da8b8; /* Bright highlight for selected state */
+       --homeButton-background-selected: #4da8b8; /* Active state with accent color */
+   
+       /* --- Borders --- */
+       --box-boarder: #4da8b8; /* Accent color for box borders */
+       --dialog-boarder: #4da8b8; /* Matches box border */
+       --table-border-color: #055c6d; /* Lighter for subtle table borders */
+   
+       /* --- Shadows & Effects --- */
+       --box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 4px 8px; /* Rich shadows for depth */
+       --home-background-animation: rgba(255, 255, 255, 0.1); /* Subtle glow animation */
+   
+       /* --- Dialog/Gradient --- */
+       --dialog-gradient: linear-gradient(135deg, #033438, #055c6d); /* Smooth transition */
+   
+       /* --- Header --- */
+       --header-background: #023338;  /* #08343c*/
+       --Row-even-background: #08343c26; 
+       --Row-select-background: #08343cb5;
+}

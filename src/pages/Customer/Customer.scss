@@ -1,0 +1,221 @@
+.Customer {}
+
+.page-container{
+    .page-container-header{
+        height: 2.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // padding: .2rem .3rem;
+        // style={{width:'100%',display:"flex"background: var(--box2-background);
+        //   padding: .2rem;}}
+        .page-container-header-toolbar{
+          width:100%;
+          display: flex;
+          background: var(--box2-background);
+          padding: .2rem;
+          // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          z-index: 9;
+        }
+        .page-header-title{
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .page-header-button{
+            display: flex;
+            align-items: center;
+            // color: var(--text-color);
+            // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            color: var(--icon-color);
+            // background: var(--icon-color);
+            
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            svg{
+                color: var(--icon-color)!important;
+            }
+            margin-right: .5rem;
+        }
+        button{
+          background-color: var(--home-background);
+        }
+    }
+    .page-container-body{
+      margin: .2rem 0.4rem;
+    }
+}
+
+.mantine-datatable{
+    th,td{
+        border-color: var(--placeholder);
+    }
+
+}
+.mantine-Popover-dropdown{
+    z-index: 9999!important;
+    color: var(--text-color);
+    background-color: var(--dialog-background)!important;
+    input{
+        background-color: var(--dialog-background)!important;
+        color: var(--text-color);
+    }
+}
+
+.focused-row {
+    background-color: #e3f2fd; /* Light blue background for focused row */
+    transition: background-color 0.3s;
+  }
+.DataTable_Style{
+    // margin: .2rem;
+    border-radius: 1rem;
+    .custom-row{
+        // max-height: 1rem!important;
+        // line-height: 1rem;
+    }
+    .mantine-Table-table{
+        // box-shadow: var(--box-shadow);
+    }
+    .mantine-Loader-root::after{
+      border-color: var(--header-background) var(--header-background) var(--header-background) transparent;
+    }
+    .mantine-datatable-scroll-area{
+        max-height: 100%;
+        overflow: auto;
+    }
+    .mantine-datatable-empty-state{
+        display: none;
+    }
+    .mantine-datatable-header-cell-sortable-icon-reversed{
+        transform: rotate(180deg);
+    }
+    .mantine-ActionIcon-root{
+        width: 2rem;
+        height: 2rem;
+    }
+    .mantine-datatable-loader{
+        position: absolute;
+        margin-right: 50%;
+        top: 10rem;
+    }
+    .SelectedRow{
+        background-color: var(--Row-select-background)!important;
+        color: var(--text-color-active);
+    }
+}
+
+
+.mantine-datatable-pagination{
+    display: flex;
+    justify-content: space-between;
+}
+.DataTable_Style{
+    // box-shadow: var(--box-shadow);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    // border-radius: 1rem;
+}
+.mantine-Menu-dropdown{
+  background-color: var(--header-background)!important;
+  border: none!important;
+  div{
+    color: var(--text-color-active)!important;
+  }
+  .mantine-Menu-item:hover{
+    background-color: unset!important;
+  }
+}
+.mantine-DataTable-root {
+
+    border-radius:  0 0 1rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15)!important;
+    overflow: hidden;
+      .mantine-datatable-pagination .mantine-Group-root .mantine-Text-root{
+        display: none;
+      }
+      .mantine-Button-root{
+        background-color: var(--header-background)!important;
+        color: var(--text-color-active);
+        border: none;
+      }
+    .mantine-Table-th {
+        background-color: var(--header-background)!important;
+        color: var(--text-color-active);
+      }
+      .mantine-Table-tr {
+        border: none;
+        border-bottom: none!important;
+        height: 1.5rem!important;
+      }
+      
+      tbody tr:nth-child(odd) {
+        background-color: var(--home-background); /* White for odd rows */
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: var(--Row-even-background); /* Light green with transparency for even rows */
+      }
+    
+      tbody td{
+        padding: .1rem .5rem .1rem .1rem!important; /* Set row height to 1rem */
+      }
+      tbody th {
+        padding: .2rem .5rem .2rem .1rem!important; /* Set row height to 1rem */
+      }
+    .mantine-datatable-header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .mantine-ScrollArea-viewport{
+        max-height: calc(100vh - 260px);
+        min-height: calc(100vh - 260px);
+        overflow: auto;
+    }
+    button.mantine-datatable-pagination-pages-control {
+      background-color: var(--Row-even-background);
+      color: var(--text-color);
+      border: none;
+    }
+    button[aria-current="page"]{
+        background-color: var(--header-background);
+        color: var(--text-color-active);
+    }
+    // .mantine-datatable-pagination-pages button.mantine-active{
+    //   background-color: var(--header-background);
+    //   color: var(--text-color-active);
+    // }
+    .mantine-datatable-pagination{
+      justify-content: start!important;
+      >div{
+        margin: 0 1rem ;
+      }
+    }
+    .mantine-datatable-pagination{
+      justify-content: start!important;
+      >div:last-child{
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  /* Global scrollbar styling */
+* {
+    scrollbar-width: thin; /* For Firefox - sets a thin scrollbar */
+    scrollbar-color: var(--header-background) var(--home-background)!important; /* For Firefox - thumb and track colors */
+  }
+  
+  /* Webkit-based browsers (e.g., Chrome, Edge, Safari) */
+  *::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--header-background); /* Dark green for the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: var(--home-background); /* Light gray for the scrollbar track */
+    border-radius: 4px; /* Rounded corners for the track */
+  }
+  

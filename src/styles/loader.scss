@@ -1,0 +1,12 @@
+// $primary-color: $my-brand-color;
+@use 'loaders.css/src/animations/ball-pulse.scss';
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+.loader-inner.ball-pulse>div{
+    background-color: #0088CC;
+}

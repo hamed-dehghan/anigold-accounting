@@ -1,0 +1,42 @@
+
+/* --- .light Theme --- */
+.light {
+    /* --- General Colors --- */
+    --text-color: #454545;
+    --text-color-active: #fff;
+    --icon-color: #D6A63F;
+    --placeholder: #a3a3a3;
+    --color-page-title: #454545;
+
+    /* --- Backgrounds --- */
+    --home-background: #fff;
+    --input-background: #ffffff;
+    --box-background: #ffffff;
+    --box2-background: #f0f0f0;
+    --box-background-hover: #e6e6e6;
+    --dialog-background: #ffffff;
+
+    /* --- Buttons --- */
+    --homeButton-border: #0088CC;
+    --homeButton-background: #ffffff;
+    --homeButton-border-selected: #0088CC;
+    --homeButton-background-selected: #0088CC;
+
+    /* --- Borders --- */
+    --box-boarder: #0088CC;
+    --dialog-boarder: #0088CC;
+    --table-border-color: #d9d9d9;
+
+    /* --- Shadows & Effects --- */
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --home-background-animation: rgba(0, 0, 0, 0.1);
+
+    /* --- Dialog/Gradient --- */
+    --dialog-gradient: #0088CC;
+
+    /* --- Header --- */
+    --header-background: #0088CC;
+    --Row-even-background: #cdeeff;
+    --Row-select-background: #18a5ec;
+
+}

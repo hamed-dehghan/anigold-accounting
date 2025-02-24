@@ -1,0 +1,50 @@
+.CustomerDetails {
+    
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    .customer-container {
+        // height: 7.4rem;
+        width: 100%;
+        display: flex;
+        // flex-wrap: wrap;
+        gap: 8px;
+        padding: 2px;
+        // border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: var(--home-background);
+        font-family: Arial, sans-serif;
+        direction: rtl; /* تنظیم جهت متن به راست‌به‌چپ */
+        text-align: right;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .customer-container >div {
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: var(--home-background);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        line-height: 1.5;
+        height: 2rem;
+        min-width: 9rem;
+    }
+    .UploadImageButtonIcon{
+        padding:0!important;
+        border-radius: 50% !important;
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem!important;
+        min-width: 4rem !important;
+        svg{
+            width: 2rem;
+            height: 2rem;
+            color: var(--header-background);
+        }
+    }
+
+    
+}

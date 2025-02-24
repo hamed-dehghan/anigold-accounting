@@ -1,0 +1,547 @@
+@use './themes/dark-theme.scss';
+@use './themes/light-theme.scss';
+@use './themes/AniGold-theme.scss';
+@use './loader.scss';
+
+html{
+    --yellow:rgba(255,193,7,1);
+    --yellow2:#D6A63F;
+    --green: rgba(5, 193, 104, 0.7);
+    --red:rgba(255, 90, 101, 1);
+}
+
+.page-container{
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+}
+
+
+//  start colors style
+.badge{
+    border-radius: .5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    padding: .1rem .3rem;
+    margin: 0 .1rem;
+    cursor: pointer;
+}
+
+.bg-success
+{
+	color: #ffffffe8!important;
+	background: rgba(5, 193, 104, 0.7)!important
+}
+.btn-success
+{
+	color: #ffffffe8!important;
+	background: rgba(5, 193, 104, 0.7)!important
+}
+.color-success{
+	color: #14CA74!important;
+}
+.tooltip-success{
+    color: #ffffff!important;
+    background: rgba(5, 193, 104,1)!important;
+}
+
+.bg-danger{
+	color: #FF5A65!important;
+	background: rgba(255, 90, 101, 0.2)!important;
+}
+.color-danger{
+    color: #FF5A65!important;
+}
+.tooltip-danger{
+    color: #ffffff!important;
+    background: rgba(255, 90, 101, 1)!important;
+}
+.btn-danger{
+    color: #ffffff!important;
+    background: rgba(255, 90, 101, 1)!important;
+    background-color: rgba(255, 90, 101, 1)!important;
+}
+
+.bg-info{
+	color: rgba(13,202,240,1) !important;
+	background-color: rgba(13,202,240, .2) !important;
+}
+.color-info{
+    color: rgba(13,202,240,1) !important;
+}
+.tooltip-info{
+    color: #ffffff!important;
+    background-color: rgba(13,202,240, 1) !important;
+
+}
+
+
+.bg-warning {
+    background-color: rgba(255,193,7, .2) !important;
+    color: rgba(255,193,7,1)!important;
+}
+.color-warning{
+    color: rgba(255,193,7,1)!important;
+}
+.tooltip-warning{
+    color: #ffffff!important;
+    background-color: rgb(230, 173, 4) !important;
+}
+
+.bg-gray {
+    color: #ffffffe8!important;
+    background-color: #6c757d !important;
+}
+.btn-gray{
+    color: #ffffffe8!important;
+    background-color: #6c757d !important;
+}
+.color-gray{
+    color: #aeb9e1!important;
+}
+
+.btn-AniGold{
+    color: #ffffff!important;
+    background: var(--icon-color)!important;
+}
+//start react_hook_form styles
+
+.react_hook_form{
+
+    color: var(--text-color);
+    margin: .2rem;
+    label{
+        display: block;
+        font-size: .9rem;
+        line-height: .8rem;
+    }
+    input,select,.css-1869usk-MuiFormControl-root,.css-b1884d{
+        margin: 0.2rem 0 .9rem 0;
+        border: 1px solid var(--box-boarder);
+        width: 100%;
+        height: 2rem;
+        border-radius: .3rem;
+        background: var(--box-background);
+        color: var(--text-color);
+    }
+    .mantine-Textarea-input{
+        margin: 0.2rem 0 .9rem 0;
+        border: 1px solid var(--box-boarder);
+        width: 100%;
+        border-radius: .3rem;
+        background: var(--box-background);
+        color: var(--text-color);
+    }
+    .css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::before,
+    .css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root:hover:not(.Mui-disabled, .Mui-error):before
+    ,.css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::after{
+        border: 0;
+        transition:none!important;
+    }
+    .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input,.css-1cccqvr{
+        color: var(--text-color);
+    }
+    .MuiSelect-icon{
+        color: var(--text-color);
+        top: .5rem;
+        right: .3rem;    
+    }
+    .css-1al598k::before,.css-igs3ac{
+        border: none!important;
+    }
+    .MuiPaper-root{
+        background: inherit;
+    }
+    .InputWithButton,.InputWithButtonSides{
+        Button{
+            width: 9rem;
+            height: 2.7rem;
+            // border: 1px solid ;
+            margin: 0.2rem 0 0.9rem 0;
+            border-radius: 0 .5rem .5rem 0;
+        }
+        input{
+            border-radius: .5rem 0 0 .5rem;
+        }
+    }
+    .InputWithButtonSides{
+        .left_Button{
+            border-radius: .5rem 0 0 .5rem;
+        }
+        .right_Button{
+            border-radius: 0 .5rem .5rem 0
+        }
+        input{
+            border-radius:0;
+        }
+    }
+    input:focus{
+        border: 1px solid var(--yellow2);
+    }
+    input[type="submit"]{
+        background: #5256D5;
+        border: 1px solid #5256D5;
+        color: var(--text-color-active);
+        width: 101%;
+        height: 3rem;
+    }
+    input:disabled{
+        background: unset;
+        border: 1px solid var(--box-boarder);
+        opacity: .5;
+    }
+    .field_error{
+        color: red;
+        font-size: .7rem;
+        margin-top: -1rem;
+        position: absolute;
+        bottom: -2rem;
+    }
+    .DatePickerStyle {
+        .MuiInputBase-input{
+            margin: 0;
+            padding: 0;
+            border: none;
+            height: 2rem;
+        }
+    }
+    select{
+        min-width: 7rem;
+        font-family: 'Vazir';
+        cursor: pointer!important;
+    }
+    input{
+        outline: none;
+    }
+    .Field_Container{
+        width: 100%;
+        margin: 0 .2rem;
+        // >div:focus-visible{
+        //     border: none!important;
+        // }
+        border-radius: 0.3rem;
+        display: flex;
+        align-items: center;
+        margin: 0.2rem .2rem 0.9rem .2rem;
+        position: relative;
+        background-color: var(--Row-even-background);
+        border: 1px solid var(--box-boarder); 
+        >label{
+            width: 50%;
+            border-radius: 0 .3rem 0.3rem 0;
+            padding: .52rem .2rem;
+            font-size: .8rem;
+            // width: auto;
+            // max-width: 50%;
+            // min-width: 20%;
+        }
+
+        >input{
+            margin: 0!important;
+            width: 70%;
+            height: 100%;
+            min-height: 2rem;
+            border-radius: .3rem 0 1rem 0.3rem!important;
+            border: unset!important;
+            border-right: 1px solid var(--box-boarder)!important;
+            padding: 0 .5rem 0 0!important;
+        }
+        select option:disabled {
+            display: none;
+          }
+          select{
+            outline: none;
+          }
+          >div{
+            width: 70%;
+            height: 100%;
+            
+          }
+    }
+    .Field_Container.Required{
+        >label::after {
+            content: '*';
+            color: red; /* Change this to your desired color */
+        }
+    }
+    .formField{
+        margin: 0.2rem 0 0.9rem 0;
+        border: 1px solid var(--box-boarder);
+        width: 100%;
+        height: 2rem;
+        border-radius: 0.3rem;
+        background: var(--box-background);
+        color: var(--text-color);
+        width: 94%;
+    }
+    .formField:focus,.custom-select__control:focus{
+        border: 1px solid var(--yellow2)!important;
+    }
+    .mantine-Textarea-input:focus{
+        border: 1px solid var(--yellow2)!important;
+    }
+    .css-j218zi-MuiInputBase-root-MuiInput-root-MuiSelect-root::before,
+    .css-j218zi-MuiInputBase-root-MuiInput-root-MuiSelect-root::after,
+    .MuiInputBase-root.MuiInput-root.MuiSelect-root::before,
+    .root-MuiInput-root.MuiSelect-root::before,
+    .css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root:hover:not(.Mui-disabled, .Mui-error):before
+    ,.css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::after{
+        border: 0!important;
+        transition:none!important;
+    }
+    /* Apply to all number inputs */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none; /* Remove spinner for WebKit browsers */
+      display: none; /* Fallback to hide the spinner */
+    }
+    
+    input[type="number"] {
+      -moz-appearance: textfield; /* Remove spinner for Firefox */
+      appearance: textfield; /* Standard property */
+    }
+    input{
+        padding: 0 .5rem ;
+    }
+}
+.react_hook_form_search_table{
+    margin: 0!important;
+    background-color: var(--header-background);
+    padding: .2rem;
+    border-radius: .5rem .5rem 0 0;
+    .Field_Container_search_form{
+        margin: 0!important;
+        width: 20rem;
+        input{
+            margin: 0;
+            background: inherit;
+            caret-color: var(--text-color-active)!important;
+            color: var(--text-color-active);
+            // border: none;
+
+        }
+        input::placeholder {
+            color: var(--text-color-active);
+        }
+    }
+}
+button{
+    outline: none!important;
+}
+.button_submit .loader-inner.ball-pulse>div{
+    background: #fff;    
+}
+.button_submit{ 
+    background-color: var(--icon-color)!important;
+    color: var(--text-color-active)!important;
+    .MuiButton-endIcon{
+        margin-right: .2rem;
+        margin-top: -.2rem;
+        font-size: 1.3rem;
+    }
+}
+.button_cancel{ 
+    color: #ffffffe8!important;
+    background-color: #6c757d !important;
+    .MuiButton-endIcon{
+        margin-right: .2rem;
+        margin-top: -.2rem;
+        font-size: 1.3rem;
+    }
+}
+.button_submit .loader-inner.ball-pulse{
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+
+.MuiTypography-root.MuiDialogTitle-root{
+    padding: .2rem;
+    padding-right: .5rem;
+    font-size: 1rem;
+    background-color: var(--header-background);
+    color:var(--text-color-active);
+    svg{
+        color:var(--text-color-active)
+    }
+}
+
+.MuiBox-root{
+    max-width: unset!important;
+}
+// Dialog style
+.MuiDialogContent-root{
+    padding: 0!important;
+    background: var(--home-background);
+    color: var(--text-color);
+}
+.MuiPaper-root.MuiDialog-paper{
+    margin: .5rem;
+    border-radius: 1rem;
+    max-width: 1050px!important;
+    min-height: 26rem;
+}
+
+// tab style
+.Tabs_Custom{
+    .MuiButtonBase.root-MuiTab-root{
+        padding: .2rem!important;
+        font-size: .9rem!important;
+    }
+    .MuiTabs-root{
+        direction: ltr;
+    }
+    .MuiTabs-scroller{
+        display: flex;
+        justify-content: center;
+    }
+}
+.Tabs_Custom.MuiTabs-root{
+    min-height: unset!important;
+    max-height: 2.5rem;
+}
+.MuiTabs-root{
+    background: var(--home-background);
+    color: var(--text-color);
+    *{
+        color: var(--text-color)!important;
+    }
+}
+
+.mantine-Popover-dropdown{
+    box-shadow: var(--box-shadow);
+}
+.MuiAlert-action{
+    margin-left: unset!important;
+}
+.MuiPaper-root.MuiAlert-root{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    .MuiAlert-message{
+        padding: .5rem 1rem;
+    }
+}
+
+
+.custom-datePicker {
+    background-color: var(--dialog-background)!important;
+    border-radius: 8px;
+    padding: 8px;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    border: none!important;
+    z-index: 99999;
+    // position: absolute;
+    .zm-Header{
+        background-color: var(--box-background)!important;
+        border: none;
+        border-radius: .5rem;
+        // color: var(--text-color)!important;
+        button:hover,button:focus{
+            background: inherit;
+        }
+        button{
+            color: var(--text-color)!important;
+        }
+    }
+    .zm-DaysButton,.zm-YearPickerButton,.zm-MonthPickerButton{
+        color: var(--text-color);
+    }
+    button,button[data-selected='true'].zm-DaysButton{
+        border-radius: .5rem!important;
+
+    }
+  }
+
+  .MuiTabs-indicator{
+    background-color: var(--header-background)!important;
+    display: none;
+  }
+.MuiTabs-root{
+    height: 2rem;
+    // min-height: 2rem!important;
+}
+  .MuiTabs-flexContainer{
+    // border-radius: .5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: var(--Row-even-background);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.3rem;
+    .MuiButtonBase-root{
+        transition: all .2s;
+        display: flex;
+        flex-direction: row;
+        svg{
+            margin-right: .2rem;
+            margin-left: .2rem;
+            font-size: 1rem;
+        }
+    }
+    .MuiButtonBase-root.MuiTab-root.Mui-selected{
+        background: var(--home-background);
+        border-radius: 1rem 1rem 0 0;
+        height: 90%;
+        min-height: unset!important;
+        margin-bottom: -.4rem;
+        // font-size: 1rem;
+        scale: 1.1;
+    }
+  }
+
+  .icon-color{
+    color: var(--icon-color);
+  }
+
+  .MuiModal-root {
+    position: fixed !important;
+    z-index: 9999!important;
+  }
+
+  .custom-select__menu {
+    position: absolute !important;
+    z-index: 99999999!important;
+  }
+  
+  .custom-select__menu-list {
+    max-height: 12rem!important; 
+    overflow-y: auto;
+  }
+  
+  .custom-select__control {
+    overflow: visible !important;
+    position: relative!important;
+    z-index: 1!important;
+  }
+  
+  .custom-select__menu-portal {
+    z-index: 99999999!important;
+  }
+  .custom-select__menu {
+    .isAddOption{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color-active)!important;
+        background: var(--header-background);
+        width: 100%;
+        padding: .2rem!important;
+        border-radius: .2rem;
+        margin: 0!important;
+        // position: fixed;
+        // bottom: 0;
+        svg{
+            color:var(--text-color-active)!important;
+            fill: var(--text-color-active)!important;
+        }
+    }
+  }
+.Toast_text_bold{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}

@@ -1,0 +1,106 @@
+.UploadFile {
+    width: 100%;
+    .ConfirmationModal{
+        cursor: pointer;
+        line-height: .5;
+        // display: none;
+        // position: absolute;
+    }
+}
+.UploadFile_Attachment{ 
+    div{
+        white-space: nowrap;
+    }
+    align-items: center;
+    display: flex;
+    margin: .2rem;
+    border: 1px dotted var(--box-boarder);
+    // width: 4rem;
+    height: 2rem;
+    background: var(--box-background);
+    color: var(--text-color);
+    border-radius: .5rem;
+    padding: .2rem;
+    direction: ltr;
+    transition: all 0.3s ease;
+}
+.UploadFile_Attachment:hover{
+    // flex-direction: row; /* Change to column layout on hover */
+    // height: auto; /* Adjust height for the column layout */
+    // .ConfirmationModal{
+    //     display: inline;
+    // }
+}
+#progressContainer {
+    width: 100%;
+    // background-color: #ddd;
+}
+
+#progressBar {
+    width: 0;
+    height: 30px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+input[type=file]::file-selector-button {
+    display: none;
+    // width: 100%;
+    // height: 100%;
+}
+
+/* Container styling */
+#progressContainer {
+    width: 100%;
+    background-color: inherit!important;
+    border-radius: 4px;
+    overflow: hidden;
+    // margin-top: 10px;
+}
+
+/* File input styling */
+#fileInput {
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px!important;
+    border-style: dashed;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align-last: center;
+    cursor: pointer;
+
+}
+
+/* Upload button styling */
+#progressContainer + div {
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Progress bar container styling */
+#progressBar {
+    height: 20px;
+    width: 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Text in progress bar */
+#progressBar span {
+    display: block;
+    color: white;
+    font-weight: bold;
+}

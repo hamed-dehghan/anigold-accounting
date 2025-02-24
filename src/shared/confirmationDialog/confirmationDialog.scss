@@ -1,0 +1,49 @@
+.ConfirmationModal{
+    
+    width: 100%;
+}
+#modal-modal-title{
+    display: flex;
+    justify-content: space-between;
+}
+.css-2ulfj5-MuiTypography-root{
+    text-align: center;
+}
+.css-2ulfj5-MuiTypography-root{
+    text-align: center;
+    .css-i4bv87-MuiSvgIcon-root{
+        position: absolute;
+        top: .7rem;
+        right: .7rem;
+        cursor: pointer;
+        opacity: .8;
+    }
+    .css-i4bv87-MuiSvgIcon-root:hover{
+        opacity: 1;
+    }
+}
+.Confirmation_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    direction: ltr;
+}
+
+.css-1wnsr1i{
+    width: 22rem!important;
+    border-radius: 1rem;
+    background-color: var(--box-background)!important;
+    color: var(--text-color);
+    border: 1px solid var(--box-boarder)!important;
+    padding: 1rem .5rem!important;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list{
+    padding: 0;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+    padding: 0;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+    color: var(--text-color);
+}

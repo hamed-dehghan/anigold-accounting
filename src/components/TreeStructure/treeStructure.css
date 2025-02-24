@@ -1,0 +1,19 @@
+.parent > .icon {
+    opacity: 0;
+}
+
+.parent:hover > .icon {
+    opacity: 1;
+}
+
+/* Hide the Ellipse icon for top-level items */
+.top-level .icon-Ellipse {
+    display: none;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    color: #000;
+    padding: 0 2px;
+    border-radius: 3px;
+  }

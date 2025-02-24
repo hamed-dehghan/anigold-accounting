@@ -1,0 +1,15 @@
+.DefinitionsPage {
+    .page-container-body{
+        margin-top: .5rem;
+    }
+    .Tabs_Custom{
+        .MuiButtonBase-root.MuiTab-root.Mui-selected{
+            background: var(--box2-background);
+        }
+    }
+    .mantine-ScrollArea-viewport{
+        max-height: calc(100vh - 220px)!important;
+        min-height: calc(100vh - 220px)!important;;
+        overflow: auto;
+    }
+}

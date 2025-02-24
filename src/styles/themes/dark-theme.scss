@@ -1,0 +1,39 @@
+
+/* --- .dark Theme --- */
+.dark {
+  /* --- General Colors --- */
+  --text-color: #F2F0F3;
+  --text-color-active: #F2F0F3;
+  --icon-color: #D6A63F;
+  --placeholder: #a1a1a1;
+  --color-page-title: #00c6c2;
+
+  /* --- Backgrounds --- */
+  --home-background: #111928;
+  --input-background: #111928;
+  --box-background: #2c3746b5;
+  --box-background-hover: #302B3C;
+  --dialog-background: #111928;
+
+  /* --- Buttons --- */
+  --homeButton-border: #5c6773;
+  --homeButton-background: #2c3746b5;
+  --homeButton-background-selected: #2c3746b5;
+
+  /* --- Borders --- */
+  --box-boarder: #5c6773;
+  --dialog-boarder: #F9D838;
+  --table-border-color: #5c6773bd;
+
+  /* --- Shadows & Effects --- */
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --home-background-animation: rgba(255, 255, 255, 0.08);
+
+  /* --- Dialog/Gradient --- */
+  --dialog-gradient: linear-gradient(to top, rgba(249, 216, 56, 0), rgba(249, 216, 56, 0), #F9D838, rgba(249, 216, 56, 0.231372549), rgba(249, 216, 56, 0));
+
+  /* --- Header --- */
+  --header-background: #111620;
+  --Row-even-background: #111928;
+  --Row-select-background: #263041;
+}
