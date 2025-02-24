@@ -15,7 +15,6 @@ import Toast from '../Toast/Toast';
 import { Modal } from '../../common/Modal/Modal';
 import { divide } from 'lodash';
 import { Input } from '../ui/input';
-import EventListener from 'react-event-listener'
 import ImageGalleryCompoent from '../ImageGallery/ImageGallery';
 
 interface ProductFormProps {
